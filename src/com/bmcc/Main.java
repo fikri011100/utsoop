@@ -51,7 +51,7 @@ public class Main {
     }
 
     private static void suratTilang(ArrayList<Tilanglist> tilanglist) {
-        int tilang;
+        int tilang, totalTilang = 0;
         Scanner surat = new Scanner(System.in);
         String[] jenispel = {
                 "Menggunakan Gawai / Handphone saat berkendara",
@@ -84,7 +84,9 @@ public class Main {
             System.out.println("pelanggaran ke " + (a + 1) + " = " + jenispel[a]);
             System.out.println("biaya denda " + (a + 1) + " = " + hargapel[a]);
             System.out.println("=============================================");
+            totalTilang = totalTilang + hargapel[a];
         }
+        System.out.println("total denda : " + totalTilang);
     }
 
     private static void showData(ArrayList<Tilanglist> tilanglist) {
