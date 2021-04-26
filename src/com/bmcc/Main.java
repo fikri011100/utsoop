@@ -90,6 +90,7 @@ public class Main {
     private static void showData(ArrayList<Tilanglist> tilanglist) {
         if (tilanglist != null) {
             for (int i = 0; i < tilanglist.size(); i++) {
+                System.out.println("====================================");
                 System.out.println("Nama : " + tilanglist.get(i).getNama());
                 System.out.println("Alamat : " + tilanglist.get(i).getAlamat());
                 System.out.println("NIK : " + tilanglist.get(i).getNik());
@@ -138,6 +139,8 @@ public class Main {
         System.out.println("4. Truk/Tronton");
         System.out.println("Masukkan  Tipe Kendaraan :");
         tipekendaraan = add.nextLine();
+
+
 
         do {
             System.out.println("Jenis Pelanggaran ");
